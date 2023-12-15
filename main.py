@@ -34,7 +34,7 @@ def help():
     print("project run\t\t\tRuns this LÖVE project, works only on projects setup by lovetools.")
 
 def version():
-    print("lovetools v1.0.0 | Python "+str(sys.version))
+    print("lovetools v0.1.0 | Python "+str(sys.version))
 
 def project_setup(loveVer):
     print("lovetools - Setting up LÖVE project in the current directory.\n")
