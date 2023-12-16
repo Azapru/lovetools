@@ -34,7 +34,7 @@ def help():
     print("project run\t\t\tRuns this LÖVE project, works only on projects setup by lovetools.")
 
 def version():
-    print("lovetools v0.1.0 | Python "+str(sys.version))
+    print("lovetools v0.1.1git | Python "+str(sys.version))
 
 def project_setup(loveVer):
     print("lovetools - Setting up LÖVE project in the current directory.\n")
@@ -43,15 +43,18 @@ def project_setup(loveVer):
     download_file(f"https://github.com/love2d/love/releases/download/{loveVer}/love-{loveVer}-win64.zip", f"love-{loveVer}-win64.zip")
 
     # Unpack archive
+    print("Unpacking package...")
     shutil.unpack_archive(f"love-{loveVer}-win64.zip", "runtime")
 
     # Remove downloaded archive
+    print("Cleaning up...")
     try:
         os.remove(f"love-{loveVer}-win64.zip")
     except FileNotFoundError:
         print("File not found. Is it gone already?")
     
     # Set default runtime version
+    print(f"Setting default runtime version to \"love-{loveVer}-win64\"")
     with open("runtime\\defaultRuntime.txt", "w") as file:
         file.write(f"love-{loveVer}-win64")
 
@@ -59,6 +62,8 @@ def project_setup(loveVer):
     if not os.path.exists("main.lua"):
         with open("main.lua", "w") as file:
             file.write("function love.load()\n\t\nend\n\nfunction love.update(dt)\n\t\nend\n\nfunction love.draw()\n\t\nend") # wtf
+
+    print("Finished!")
 
 def project_run():
     with open("runtime\\defaultRuntime.txt", 'r') as file:
