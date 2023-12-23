@@ -1,12 +1,10 @@
 # lovetools
 
-A small tool set for an *awesome* framework, LÖVE!
+A small CLI tool set for an *awesome* framework, LÖVE!
 
 (This tool is Windows only for now)
 
 # Installation
-
-While there's no install script yet, you can get the executable in two ways:
 
 ## Build from source (latest)
 
@@ -16,13 +14,15 @@ While there's no install script yet, you can get the executable in two ways:
 git clone https://github.com/Azapru/lovetools.git
 cd lovetools
 ```
-2. Run the build script
+2. Run the install script
 ```sh
-build
+INSTALL
 ```
-3. If finished successfully, the executable should be inside "dist" folder.
+3. If finished successfully, lovetools should be now installed!
 
 ## or... Download pre-build binary
+
+(NOT Recommended!)
 
 Just go to the [releases](https://github.com/Azapru/lovetools/releases) and download latest build.
 Keep in mind it might not be as up-to-date as building from source, but it might be more stable.
