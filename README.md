@@ -18,7 +18,8 @@ cd lovetools
 ```sh
 INSTALL
 ```
-3. If finished successfully, lovetools should be now installed!
+5. Explorer should open inside lovetools's install directory, now add this folder into your user PATH variable manually because Windows is a shitty OS and its SETX PATH command completely messes up your whole PATH.
+4. If done correctly, lovetools should be now installed!
 
 ## or... Download pre-build binary
 
