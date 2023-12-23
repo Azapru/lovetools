@@ -8,7 +8,7 @@ A small CLI tool set for an *awesome* framework, LÖVE!
 
 ## Build from source (latest)
 
-(Requires Python and Pip to be installed on the system)
+(Requires Git, Python and Pip to be installed on the system)
 1. Clone this repository
 ```sh
 git clone https://github.com/Azapru/lovetools.git
