@@ -30,11 +30,11 @@ def help():
     print("help\t\t\t\tDisplays this help message.")
     print("version\t\t\t\tDisplays lovetools version.")
     print("project setup\t\t\tSetups LÖVE project in current directory.")
-    print("project setup [version]\t\tSetups LÖVE project in current directory with specified LÖVE version.")
+    print("project setup [version]\t\tSetups LÖVE project in current directory with specified LÖVE version. (Might need manual fixes)")
     print("project run\t\t\tRuns this LÖVE project, works only on projects setup by lovetools.")
 
 def version():
-    print("lovetools v0.1.1git | Python "+str(sys.version))
+    print("lovetools v0.1.2git | Python "+str(sys.version))
 
 def project_setup(loveVer):
     print("lovetools - Setting up LÖVE project in the current directory.\n")
